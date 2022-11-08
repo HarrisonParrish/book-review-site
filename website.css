@@ -1,0 +1,32 @@
+#header{
+    background-color: #9C9583;
+}
+.articles{
+    background-color: #E2D4B7
+}
+.post-details{
+    font-family:Serif;
+    text-align: left;
+    grid-row: 4;
+    column-count: 4;
+}
+.post-content{
+    font-family:fantasy;
+    margin: 0 auto;
+    align-items: center;
+    grid-column: 2;
+}
+
+h1{
+    color:#3A2F17;
+}
+.main-nav{
+    column-count: 3;
+    column-gap: 1px;  
+    border: 2px solid #3A2F17; 
+}
+#main-nav{
+    list-style-type: none;
+    justify-content: end;
+    justify-items: end;
+}
