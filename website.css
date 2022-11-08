@@ -9,6 +9,7 @@
     text-align: left;
     grid-row: 4;
     column-count: 4;
+    margin: 0 auto
 }
 .post-content{
     font-family:fantasy;
