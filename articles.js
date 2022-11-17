@@ -1,3 +1,10 @@
+function strings(str)
+    let text = description
+    return text.replace(description)
+    
+
+
+
 const articles = [
     {
         id: 1,
