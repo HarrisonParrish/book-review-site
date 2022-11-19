@@ -1,10 +1,3 @@
-function strings(str)
-    let text = description
-    return text.replace(description)
-    
-
-
-
 const articles = [
     {
         id: 1,
@@ -44,5 +37,31 @@ const articles = [
         genre: "Fantasy",
         stars: "⭐⭐⭐⭐⭐"
     }
-    ];
-                
+];
+function makeArticle(article) {
+        return `<section>
+        <article>
+            <div>
+                <p>${article.date}</p>
+                <p>${article.ages}</p>
+                <p>${article.genre}</p>
+                <p>${article.stars}</p>
+            </div>
+            <div>
+                <h2><a href="${article.link}" target="_blank">${article.title}</a></h2>
+                <a href="${article.link}" target="_blank"><img alt="${article.imgAlt}" src=${article.imgSrc}></a>
+                <p>${article.description}
+                    <a class="link" href="${article.link}" target="_blank">Read More...</a>
+                </p>
+            </div>
+        </article>
+    </section>`
+}
+    function renderArticles(){
+        const htmlArticles = articles.map(makeArticle);
+        const newUl = document.createElement('ul');
+        newUl.classList.add('article-list');
+        newUl.insertAdjacentHTML('afterbegin', htmlArticles.join(''));
+        document.querySelector('section').insertAdjacentElement('beforeend', newUl);
+      }
+renderArticles()
